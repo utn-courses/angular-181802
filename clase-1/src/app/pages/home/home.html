@@ -1,0 +1,20 @@
+<h1>{{nombre}}</h1>
+<p>Hay {{cantidad}} productos</p>
+<p>Valor stock total: ${{cantidad * precioPorProducto}}</p>
+<img [src]="image" alt="Imagen random">
+<hr>
+<button (click)="saludar()">Saludar</button>
+<p>Contador: {{contador}}</p>
+<button (click)="sumar()">Sumar</button>
+@if (cantidad > 0 && cantidad < 1) { <p>Hay productos</p>
+  } @else if (cantidad === 1) {
+  <p>Hay un producto</p>
+  } @else {
+  <p>No hay productos</p>
+  }
+
+  @for (producto of productos; track producto.id) {
+  <div>
+    <p>Nombre del producto: {{producto.nombre}}</p>
+  </div>
+  }
