@@ -1,0 +1,39 @@
+<form [formGroup]="formulario" (submit)="guardarProducto()">
+  <label>
+    Nombre
+    <input type="text" formControlName="nombre">
+  </label>
+  <!-- @if(formulario.controls.nombre.errors?.["required"]){
+  <span style="color: red;">Este campo es obligatorio</span>
+  } -->
+  @if(formulario.controls.nombre.errors?.["minlength"]){
+  <span style="color: red;">El nombre debería tener al menos 4 caracteres</span>
+  }
+
+  <label>
+    Descripción
+    <textarea formControlName="descripcion"></textarea>
+  </label>
+
+  <label>
+    Precio
+    <input type="number" min="0" value="0" formControlName="precio">
+  </label>
+
+  <label>
+    Imagen
+    <input type="text" formControlName="imagen">
+  </label>
+
+  <label>
+    Categoria
+    <input type="text" formControlName="categoria">
+  </label>
+
+  <label>
+    Disponible
+    <input type="checkbox" formControlName="disponible">
+  </label>
+
+  <button>Guardar</button>
+</form>

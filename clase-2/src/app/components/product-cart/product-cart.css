@@ -1,0 +1,12 @@
+.producto {
+  background-color: yellowgreen;
+  padding: 20px;
+  text-align: center;
+}
+
+.producto img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
