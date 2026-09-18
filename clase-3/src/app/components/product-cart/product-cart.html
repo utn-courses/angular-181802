@@ -1,0 +1,15 @@
+<div class="producto">
+  <div class="producto-imagen">
+    <img width="100" [src]="producto.image" [alt]="'Imagen de ' + producto.title">
+  </div>
+
+  <div class="producto-info">
+    <small>ID: {{ producto.id }}</small>
+    <h2>{{ producto.title }}</h2>
+    <span>{{ producto.category }}</span>
+    <p>{{ producto.description }}</p>
+    <strong>${{ producto.price }}</strong>
+    <p>⭐ {{ producto.rating.rate }} ({{ producto.rating.count }} reseñas)</p>
+    <button>Comprar</button>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+.producto {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.producto-imagen {
+  flex-shrink: 0;
+}
+
+.producto-imagen img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.producto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.producto-info small {
+  color: #888;
+}
+
+.producto-info h2 {
+  margin: 0;
+  color: #222;
+}
+
+.producto-info span {
+  color: #666;
+  font-size: 14px;
+}
+
+.producto-info p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.producto-info strong {
+  font-size: 20px;
+  color: #16803c;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
+}
